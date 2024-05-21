@@ -7,7 +7,7 @@ private float Temperature;
 private double Pressure;
 private int Voltage;
 private String SupplierName;
-private OpratingStatus opratingStatus;
+private OperatingStatus operatingStatus;
 
     public void setName(String name) {
         Name = name;
@@ -29,8 +29,8 @@ private OpratingStatus opratingStatus;
         SupplierName = supplierName;
     }
 
-    public void setOpratingStatus(OpratingStatus opratingStatus) {
-        this.opratingStatus = opratingStatus;
+    public void setOperatingStatus(OperatingStatus operatingStatus) {
+        this.operatingStatus = operatingStatus;
     }
 
     @Override
@@ -41,7 +41,7 @@ private OpratingStatus opratingStatus;
                 ", Pressure=" + Pressure +
                 ", Voltage=" + Voltage +
                 ", SupplierName='" + SupplierName + '\'' +
-                ", opratingStatus=" + opratingStatus +
+                ", opratingStatus=" + operatingStatus +
                 '}';
     }
 }

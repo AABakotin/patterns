@@ -1,6 +1,6 @@
 package builder;
 
-public class LightIndustrialUnitBuilder extends IndusrtialBuilder {
+public class LightIndustrialUnitBuilder extends IndustrialBuilder {
 
 
     @Override
@@ -30,7 +30,7 @@ public class LightIndustrialUnitBuilder extends IndusrtialBuilder {
 
     @Override
     void buildOperatingStatus() {
-        industrialUnit.setOpratingStatus(OpratingStatus.OPERATING);
+        industrialUnit.setOperatingStatus(OperatingStatus.OPERATING);
     }
 
     @Override

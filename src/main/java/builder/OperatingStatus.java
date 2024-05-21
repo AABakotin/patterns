@@ -1,6 +1,6 @@
 package builder;
 
-public enum OpratingStatus {
+public enum OperatingStatus {
 
   OPERATING,
   STOP;
