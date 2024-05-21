@@ -2,9 +2,9 @@ package builder;
 
 public class Director {
 
-    IndusrtialBuilder builder;
+    IndustrialBuilder builder;
 
-    public void setBuilder(IndusrtialBuilder builder) {
+    public void setBuilder(IndustrialBuilder builder) {
         this.builder = builder;
     }
     IndustrialUnit buildIndustrialUnit(){
@@ -15,8 +15,7 @@ public class Director {
         builder.buildVoltage();
         builder.buildSupplierName();
         builder.buildOperatingStatus();
-        IndustrialUnit industrialUnit = builder.getIndustrialUnit();
-        return industrialUnit;
+        return builder.getIndustrialUnit();
     }
 
 }

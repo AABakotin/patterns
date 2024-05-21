@@ -1,6 +1,6 @@
 package builder;
 
-public abstract class IndusrtialBuilder {
+public abstract class IndustrialBuilder {
 
     IndustrialUnit industrialUnit;
 

@@ -1,82 +1,82 @@
 package builder.EasyBuilder;
 
 public class Report {
-    private String  Header;
-    private String Title;
-    private String Content;
-    private String Table;
-    private int PageNumber;
+    private String header;
+    private String name;
+    private String content;
+    private String table;
+    private int pageNumber;
 
     public Report(Builder builder) {
-        this.Header = builder.Header;
-        this.Title = builder.Title;
-        this.Content = builder.Content;
-        this.Table = builder.Table;
-        this.PageNumber = builder.PageNumber;
+        this.header = builder.header;
+        this.name = builder.title;
+        this.content = builder.content;
+        this.table = builder.table;
+        this.pageNumber = builder.pageNumber;
     }
 
     public String getHeader() {
-        return Header;
+        return header;
     }
 
     public String getTitle() {
-        return Title;
+        return name;
     }
 
     public String getContent() {
-        return Content;
+        return content;
     }
 
     public String getTable() {
-        return Table;
+        return table;
     }
 
     public int getPageNumber() {
-        return PageNumber;
+        return pageNumber;
     }
 
     @Override
     public String toString() {
         return "Report{" +
-                "Header='" + Header + '\'' +
-                ", Title='" + Title + '\'' +
-                ", Content='" + Content + '\'' +
-                ", Table='" + Table + '\'' +
-                ", PageNumber=" + PageNumber +
+                "Header='" + header + '\'' +
+                ", Title='" + name + '\'' +
+                ", Content='" + content + '\'' +
+                ", Table='" + table + '\'' +
+                ", PageNumber=" + pageNumber +
                 '}';
     }
 
     static class Builder {
 
-        private String Header;
-        private String Title;
-        private String Content;
-        private String Table;
-        private int PageNumber;
+        private String header;
+        private String title;
+        private String content;
+        private String table;
+        private int pageNumber;
 
 
         public Builder setTitle(String title) {
-            Title = title;
+            this.title = title;
             return this;
         }
 
         public Builder setContent(String content) {
-            Content = content;
+            this.content = content;
             return this;
         }
 
         public Builder setTable(String table) {
-            Table = table;
+            this.table = table;
             return this;
         }
 
         public Builder setPageNumber(int pageNumber) {
-            PageNumber = pageNumber;
+            this.pageNumber = pageNumber;
             return this;
         }
 
         public Builder(String header){ //Обязательное поле
-            Header = header;
+            this.header = header;
         }
 
         public Report build(){
