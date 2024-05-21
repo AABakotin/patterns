@@ -2,7 +2,7 @@ package facade;
 
 public class ComputerFacade {
 
-    private Computer computer;
+    private final Computer computer;
 
     public ComputerFacade(Computer computer) {
         this.computer = computer;

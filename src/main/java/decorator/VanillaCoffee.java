@@ -1,7 +1,7 @@
 package decorator;
 
 public class VanillaCoffee implements Coffee {
-    private Coffee coffee;
+    private final Coffee coffee;
 
     public VanillaCoffee(Coffee coffee) {
         this.coffee = coffee;

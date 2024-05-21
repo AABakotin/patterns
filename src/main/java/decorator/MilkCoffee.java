@@ -2,7 +2,7 @@ package decorator;
 
 public class MilkCoffee implements Coffee{
 
-    private Coffee coffee;
+    private final Coffee coffee;
 
     public MilkCoffee(Coffee coffee) {
         this.coffee = coffee;

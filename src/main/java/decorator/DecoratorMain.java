@@ -9,5 +9,16 @@ public class DecoratorMain {
         Coffee milkCoffee = new MilkCoffee(simpleCoffee);
         System.out.println(milkCoffee.getCost());
         System.out.println(milkCoffee.getDescription());
+
+
+        Coffee vanilaCoffee = new VanillaCoffee(milkCoffee);
+        System.out.println(vanilaCoffee.getCost());
+        System.out.println(vanilaCoffee.getDescription());
+
+        Coffee whipCoffee = new WhipCoffee(vanilaCoffee);
+        System.out.println(whipCoffee.getCost());
+        System.out.println(whipCoffee.getDescription());
     }
+
+
 }
