@@ -49,6 +49,10 @@ public class Producer implements MqPublishPoint {
 
     @Override
     public void put(Message message) throws InterruptedException {
-
+        try {
+            queue.put(message);
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
     }
 }
