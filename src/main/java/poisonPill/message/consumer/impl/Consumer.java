@@ -10,7 +10,7 @@ public class Consumer implements MqSubscribePoint {
     private final String name;
 
 
-    public Consumer(String name,MqSubscribePoint queue) {
+    public Consumer(String name, MqSubscribePoint queue) {
         this.queue = queue;
         this.name = name;
     }
@@ -26,7 +26,7 @@ public class Consumer implements MqSubscribePoint {
             try {
                 msg = take();
                 if (msg == POISON_PILL) {
-                    System.out.printf("Consumer received a POISON PILL: %s%n", name);
+                    System.out.printf("Consumer receive request to terminate 'POISON PILL': %s", name);
                     break;
                 }
             } catch (Exception e) {
